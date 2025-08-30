@@ -27,8 +27,8 @@ The challenge is to build out this profile card component and get it looking as 
 
 ### Links
 
-- Solution URL: [Github/profile-card-Component]()
-- Live Site URL: [Frontend-Mentor/profile-card-Component]()
+- Solution URL: [Github/profile-card-Component](https://github.com/Genrex7/profile-card-component)
+- Live Site URL: [Frontend-Mentor/profile-card-Component](https://genrex7.github.io/profile-card-component/)
 
 ## My process
 
