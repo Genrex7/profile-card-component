@@ -1,0 +1,161 @@
+/*
+01 LAYOUT
+    - Mobile: 375px
+    - Desktop: 1440px
+
+02 COLORS
+    - Primary
+        -- Blue-600: hsl(185, 75%, 39%)
+        -- Navy-950: hsl(229, 23%, 23%)
+        -- Gray-500: hsl(227, 10%, 46%)
+
+    - Neutral
+        -- Gray-100: hsl(225, 10%, 92%)
+
+    - Notes
+        Use transparency to get the color variations necessary to match the design. Hint: look into using `hsla()`.
+    
+
+03 TYPOGRAPHY
+
+    - FONTS FAMILY
+      -- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+      -- Weights: 400, 700
+
+    - Font Size (px):
+      -- paragraph: 18
+
+    - Spacing (px):
+
+*/
+
+:root {
+	--blue-600: hsl(185, 75%, 39%);
+	--navy-950: hsl(229, 23%, 23%);
+	--gray-500: hsl(227, 10%, 46%);
+
+	--gray-100: hsl(225, 10%, 92%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	/* Default: 1rem = 16px */
+	/* Percentage of user's browser font-size setting
+    10px / 16px = 0.625 = 62.5% */
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+	line-height: 1;
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--gray-500);
+	background-color: var(--blue-600);
+	position: relative;
+	overflow: hidden;
+}
+
+.bg-img-1 {
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	transform: translate(50%, -20%);
+}
+.bg-img-2 {
+	position: absolute;
+	bottom: -50%;
+	right: -50%;
+	transform: translate(-50%, 25%);
+}
+
+.main {
+	height: 98vh;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+.section-component {
+	background-color: white;
+	display: flex;
+	border-radius: 2rem;
+	flex-direction: column;
+	z-index: 1;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.img-container {
+	position: relative;
+}
+.img-pattern {
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+}
+.img-victor {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 0.5rem solid white;
+	border-radius: 50%;
+}
+.profile-details {
+	padding: 8rem 0 3rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	border-bottom: 1px solid var(--gray-100);
+}
+.author {
+	display: flex;
+	gap: 1rem;
+}
+.profile-name {
+	font-weight: 700;
+	color: var(--navy-950);
+}
+
+.social-details {
+	padding: 3rem 4rem;
+	display: flex;
+	justify-content: space-between;
+}
+.data {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+}
+.count {
+	font-weight: 700;
+	color: var(--navy-950);
+}
+.social {
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
+}
+
+/* ------- FOOTER --------- */
+.attribution {
+	color: var(--gray-100);
+	font-size: 14px;
+	text-align: center;
+}
+.attribution a {
+	color: aquamarine;
+	text-decoration: none;
+}
+.attribution a:hover,
+.attribution a:active {
+	color: black;
+}
